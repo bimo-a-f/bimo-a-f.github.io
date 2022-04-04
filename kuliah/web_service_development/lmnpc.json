@@ -108,7 +108,7 @@
       "attribute": {
         "socket": "AM4",
         "form_factor": "ATX",
-        "chipset": "B450",
+        "chipset": "B450"
       }
     },{
       "id": 8,
@@ -121,7 +121,7 @@
       "attribute": {
         "socket": "AM4",
         "form_factor": "m-ATX",
-        "chipset": "B450",
+        "chipset": "B450"
       }
     },{
       "id": 9,
@@ -134,7 +134,7 @@
       "attribute": {
         "socket": "AM4",
         "form_factor": "ATX",
-        "chipset": "X570",
+        "chipset": "X570"
       }
     }
   ]
