@@ -6,7 +6,7 @@
       "id": 0,
       "category": "CPU",
       "name": "Kor Ai9-12900K",
-      "description": "High-end processor generasi 12 dari intel",
+      "description": "High-end processor generasi 12 dari INTEL",
       "weight": 0.5,
       "price": 7000000,
       "stock": 17,
@@ -19,7 +19,7 @@
       "id": 1,
       "category": "CPU",
       "name": "Raizen 9 5900X",
-      "description": "High-end raizen processor generasi 5 dari AMD",
+      "description": "High-end raizen processor generasi 5 dari AEMDE",
       "weight": 0.5,
       "price": 6500000,
       "stock": 13,
@@ -29,7 +29,7 @@
         "frequency": "4.80 GHz"
       }
     },{
-      "id": 1,
+      "id": 2,
       "category": "CPU",
       "name": "Raizen 7 5700G",
       "description": "Processor raizen dengan integrated graphic tercepat",
@@ -40,6 +40,101 @@
         "core": 8,
         "thread": 16,
         "frequency": "4.60 GHz"
+      }
+    },{
+      "id": 3,
+      "category": "GPU",
+      "name": "ARTIEKS 3060TI",
+      "description": "Mid-range GPU dari ENFIDIA dengan teknologi raytracing",
+      "weight": 1.5,
+      "price": 7700000,
+      "stock": 3,
+      "attribute": {
+        "raytracing": true,
+        "core": 4864,
+        "frequency": "1.67 GHz",
+        "ram": "8 GB GDDR6"
+      }
+    },{
+      "id": 4,
+      "category": "GPU",
+      "name": "AREKS 5600XT",
+      "description": "Mid-range GPU dari AEMDE dengan teknologi raytracing",
+      "weight": 1.5,
+      "price": 7400000,
+      "stock": 3,
+      "attribute": {
+        "raytracing": true,
+        "core": 2304,
+        "frequency": "1.56 GHz",
+        "ram": "6 GB GDDR6"
+      }
+    },{
+      "id": 5,
+      "category": "GPU",
+      "name": "ARTIEKS 3090TI",
+      "description": "GPU High-end tercepat dari ENFIDIA dengan teknologi raytracing",
+      "weight": 3,
+      "price": 25000000,
+      "stock": 1,
+      "attribute": {
+        "raytracing": true,
+        "core": 10752,
+        "frequency": "1.86 GHz",
+        "ram": "24 GB GDDR6X"
+      }
+    },{
+      "id": 6,
+      "category": "GPU",
+      "name": "JITIEKS 1660TI",
+      "description": "GPU Mid-range entry-level dari ENFIDIA",
+      "weight": 1.5,
+      "price": 6300000,
+      "stock": 11,
+      "attribute": {
+        "raytracing": false,
+        "core": 1536,
+        "frequency": "1.77 GHz",
+        "ram": "6 GB GDDR6"
+      }
+    },{
+      "id": 7,
+      "category": "MOBO",
+      "name": "ASROK B450 STIL LEJEN",
+      "description": "Motherboard mid-range dengan socket am4 dari asrock",
+      "weight": 2,
+      "price": 2300000,
+      "stock": 31,
+      "attribute": {
+        "socket": "AM4",
+        "form_factor": "ATX",
+        "chipset": "B450",
+      }
+    },{
+      "id": 8,
+      "category": "MOBO",
+      "name": "ESUS B450M MORTIR",
+      "description": "Motherboard mid-range dengan socket am4 dari esus",
+      "weight": 1.5,
+      "price": 1900000,
+      "stock": 22,
+      "attribute": {
+        "socket": "AM4",
+        "form_factor": "m-ATX",
+        "chipset": "B450",
+      }
+    },{
+      "id": 9,
+      "category": "MOBO",
+      "name": "ESUS AROJI KROSHEIR 8 EKSTRIM",
+      "description": "Motherboard High-end dengan socket am4 dari esus",
+      "weight": 2.5,
+      "price": 3500000,
+      "stock": 15,
+      "attribute": {
+        "socket": "AM4",
+        "form_factor": "ATX",
+        "chipset": "X570",
       }
     }
   ]
