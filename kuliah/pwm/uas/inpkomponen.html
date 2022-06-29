@@ -99,6 +99,11 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#" class="d-flex align-items-center" onclick="sessionStorage.removeItem('isloggedin');window.location='login.html'">
+                    LOGOUT
+                </a>
+            </li>
         </ul>
     </nav>
     <header>
@@ -145,6 +150,9 @@
     </div>
 
     <script>
+        if (!sessionStorage.getItem("isloggedin")) {
+            window.location = 'login.html';
+        }
         var activeid = sessionStorage.getItem("activeid");
         function addnewAttr() {
             var h = ''+
