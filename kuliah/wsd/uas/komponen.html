@@ -178,7 +178,8 @@
             if (confirm('Hapus Data?')) {
                 $.ajax({
                     type: "DELETE",
-                    url: "https://apimo.hrindo.id/api.php/records/component/"+d,
+                    url: "https://apimo.hrindo.id/api-auth.php/records/component/"+d,
+                    headers: {"X-API-Key":"4xYkfTWzS7QhA"}
                     success: function (response) {
                         getdata()
                     }
