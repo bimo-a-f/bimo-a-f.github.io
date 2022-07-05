@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC STORE</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- HC Off Canvas -->
+    <link rel="stylesheet" href="./hcoffcanvas/hc-offcanvas-nav.css">
+    <script src="./hcoffcanvas/hc-offcanvas-nav.js"></script>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 57px;
+            background-color: #ffffff99;
+            z-index: 999;
+        }
+
+        .main-container {
+            width: 100vw;
+            margin-top: 57px;
+        }
+
+        .toggle-nav-here:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="./" class="d-flex align-items-center">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    &nbsp;&nbsp;&nbsp;
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    &nbsp;&nbsp;&nbsp;
+                    Rakitan
+                </a>
+                <ul>
+                    <li>
+                        <a href="./rakitan.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./inprakitan.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Tambah
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    &nbsp;&nbsp;&nbsp;
+                    Komponen
+                </a>
+                <ul>
+                    <li>
+                        <a href="./komponen.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./inpkomponen.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Tambah
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center" onclick="sessionStorage.removeItem('isloggedin');window.location='login.html'">
+                    LOGOUT
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="h-100 row justify-content-center align-items-center" style="background-color: #336ca6;color: white;">
+            <span class="toggle-nav-here" style="font-size: 17pt;cursor: pointer;">&#9776;</span>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="#" id="formrakitan" onsubmit="savedata(event)">
+                    <div class="form-group mb-3">
+                        <label>Nama</label>
+                        <input class="form-control" type="text" id="txtnem">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Harga</label>
+                        &nbsp;&nbsp;&nbsp;
+                        <small id="styledpricereadable"></small>
+                        <input class="form-control" type="number" min="0" oninput="setstyledpricereadable()" id="txtprc">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Processor</label>
+                        <select class="form-control" name="component[Processor]" id="slcprc" rprsntdata="Processor"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Motherboard</label>
+                        <select class="form-control" name="component[Motherboard]" id="slcmbr" rprsntdata="Motherboard"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>CPU Cooler</label>
+                        <select class="form-control" name="component[CPU Cooler]" id="slcclr" rprsntdata="CPU Cooler"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Case</label>
+                        <select class="form-control" name="component[Case]" id="slccas" rprsntdata="Case"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Graphics Card</label>
+                        <select class="form-control" name="component[Graphics Card]" id="slcgpc" rprsntdata="Graphics Card"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>RAM</label>
+                        <select class="form-control" name="component[RAM]" id="slcram" rprsntdata="RAM"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Storage</label>
+                        <select class="form-control" name="component[Storage]" id="slcstr" rprsntdata="Storage"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Case Cooler</label>
+                        <select class="form-control" name="component[Case Cooler]" id="slcccr" rprsntdata="Case Cooler"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Power Supply</label>
+                        <select class="form-control" name="component[Power Supply]" id="slcpsu" rprsntdata="Power Supply"></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Monitor</label>
+                        <select class="form-control" name="component[Monitor]" id="slcmtr" rprsntdata="Monitor"></select>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-block">SAVE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var activeid = sessionStorage.getItem("activeid");
+        var alcom = [];
+        function setopt(r,d) {
+            $('#'+d).html('');
+            var deval = $('#'+d).attr('deval');
+            var h = '<option></option>';
+            for (let i = 0; i < r.length; i++) {
+                const e = r[i];
+                var s = '';
+                if (e.nama == deval) {
+                    s = 'selected'
+                }
+                console.log(deval)
+                h += '<option value="'+e.id+'" '+s+'>'+e.nama+'</option>'
+            }
+            $('#'+d).html(h);
+        }
+
+        function savedata(e) {
+            e.preventDefault();
+
+            var d = {};
+            d.name = $('#txtnem').val();
+            d.harga = $('#txtprc').val();
+            komponen = {};
+            $('select').each(function (index, element) {
+                // element == this
+                var v = $(this).val();
+                var t = $(this).attr('rprsntdata');
+                var k = alcom.find(o => o.id == v);
+                if (k) {
+                    komponen[t] = k.nama;
+                }
+            });
+            d.komponen = JSON.stringify(komponen);
+
+            if (activeid) {
+                $.ajax({
+                    type: "PUT",
+                    url: "https://apimo.hrindo.id/api.php/records/rakitan/"+activeid,
+                    data: d,
+                    success: function (response) {
+                        window.location = 'rakitan.html'
+                    }
+                });
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "https://apimo.hrindo.id/api.php/records/rakitan",
+                    data: d,
+                    success: function (response) {
+                        window.location = 'rakitan.html'
+                    }
+                });
+            }
+        }
+
+        function setstyledpricereadable() {
+            var n = Number($('#txtprc').val());
+            $('#styledpricereadable').html('['+n.toLocaleString('id-ID',{style:'currency',currency:'IDR'})+']');
+        }
+
+        $(document).ready(function () {
+            $('#main-nav').hcOffcanvasNav({
+                // disableAt: 1024,
+                customToggle: $('.toggle-nav-here'),
+                navTitle: 'PC STORE',
+                levelTitles: true,
+                levelTitleAsBack: true
+            });
+
+            $.ajax({
+                type: "GET",
+                url: "https://apimo.hrindo.id/api.php/records/component",
+                success: function (response) {
+                    alcom=response.records
+                }
+            });
+
+            var uriGC = "https://apimo.hrindo.id/api.php/records/component?filter=type,eq,";
+
+            if (activeid) {
+                $.ajax({
+                    type: "GET",
+                    url: "https://apimo.hrindo.id/api.php/records/rakitan/"+activeid,
+                    success: function (response) {
+                        var nama = response.name;
+                        var harga = response.harga;
+                        var komponen = JSON.parse(response.komponen);
+
+                        $('#txtnem').val(nama);
+                        $('#txtprc').val(harga);
+
+                        for (const k in komponen) {
+                            if (Object.hasOwnProperty.call(komponen, k)) {
+                                const e = komponen[k];
+                                $('select[rprsntdata="'+k+'"]').attr('deval',e);
+                            }
+                        }
+                        
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Processor'),success: function (response) {setopt(response.records,'slcprc')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Motherboard'),success: function (response) {setopt(response.records,'slcmbr')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('CPU Cooler'),success: function (response) {setopt(response.records,'slcclr')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Case'),success: function (response) {setopt(response.records,'slccas')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Graphics Card'),success: function (response) {setopt(response.records,'slcgpc')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('RAM'),success: function (response) {setopt(response.records,'slcram')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Storage'),success: function (response) {setopt(response.records,'slcstr')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Case Cooler'),success: function (response) {setopt(response.records,'slcccr')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Power Supply'),success: function (response) {setopt(response.records,'slcpsu')}});
+                        $.ajax({type: "GET", url: uriGC+encodeURIComponent('Monitor'),success: function (response) {setopt(response.records,'slcmtr')}});
+                    }
+                })
+            } else {
+                
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Processor'),success: function (response) {setopt(response.records,'slcprc')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Motherboard'),success: function (response) {setopt(response.records,'slcmbr')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('CPU Cooler'),success: function (response) {setopt(response.records,'slcclr')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Case'),success: function (response) {setopt(response.records,'slccas')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Graphics Card'),success: function (response) {setopt(response.records,'slcgpc')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('RAM'),success: function (response) {setopt(response.records,'slcram')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Storage'),success: function (response) {setopt(response.records,'slcstr')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Case Cooler'),success: function (response) {setopt(response.records,'slcccr')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Power Supply'),success: function (response) {setopt(response.records,'slcpsu')}});
+                $.ajax({type: "GET", url: uriGC+encodeURIComponent('Monitor'),success: function (response) {setopt(response.records,'slcmtr')}});
+            }
+        });
+    </script>
+</body>
+</html>
