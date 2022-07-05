@@ -195,11 +195,10 @@
                 contentType:'application/json',
                 secure: true,
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    "X-API-Key":"4xYkfTWzS7QhA"
+                    'Access-Control-Allow-Origin': '*'
                 },
                 beforeSend: function (xhr) {
-                    xhr.setRequestHeader ("Authorization", "Basic " + btoa(""));
+                    xhr.setRequestHeader ("X-API-Key", "4xYkfTWzS7QhA");
                 },
                 success: function (response) {
                     console.log(response)
