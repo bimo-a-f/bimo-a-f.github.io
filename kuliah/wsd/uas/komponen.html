@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC STORE</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- HC Off Canvas -->
+    <link rel="stylesheet" href="./hcoffcanvas/hc-offcanvas-nav.css">
+    <script src="./hcoffcanvas/hc-offcanvas-nav.js"></script>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 57px;
+            background-color: #ffffff99;
+            z-index: 999;
+        }
+
+        .main-container {
+            width: 100vw;
+            margin-top: 57px;
+        }
+
+        .toggle-nav-here:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="./" class="d-flex align-items-center">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    &nbsp;&nbsp;&nbsp;
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    &nbsp;&nbsp;&nbsp;
+                    Rakitan
+                </a>
+                <ul>
+                    <li>
+                        <a href="./rakitan.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./inprakitan.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Tambah
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    &nbsp;&nbsp;&nbsp;
+                    Komponen
+                </a>
+                <ul>
+                    <li>
+                        <a href="./komponen.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./inpkomponen.html" class="d-flex align-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                            &nbsp;&nbsp;&nbsp;
+                            Tambah
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="d-flex align-items-center" onclick="sessionStorage.removeItem('isloggedin');window.location='login.html'">
+                    LOGOUT
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="h-100 row justify-content-center align-items-center" style="background-color: #336ca6;color: white;">
+            <span class="toggle-nav-here" style="font-size: 17pt;cursor: pointer;">&#9776;</span>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="w-100">
+            <h1>KOMPONEN</h1>
+            <div class="d-grid gap-2">
+                <a href="inpkomponen.html" class="btn btn-info btn-block">+</a>
+            </div>
+            <div class="table-responsive w-100">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datakomponen">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detailModalLabel">Attribute</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tbody id="tblAttributeList"></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        sessionStorage.removeItem("activeid");
+        var jsdetail = {};
+        function detaildata(d) {
+            console.log(jsdetail[d])
+            $('#tblAttributeList').html('');
+            
+            for (let i = 0; i < jsdetail[d].length; i++) {
+                const e = jsdetail[d][i];
+                var h = '<tr><td>'+e.nem+'</td><td>:</td><td>'+e.val+'</td></tr>';
+                $('#tblAttributeList').append(h);
+            }
+
+            $('#detailModal').modal('show')
+        }
+        function editdata(d) {
+            console.log(d)
+            sessionStorage.setItem("activeid", d);
+            window.location = 'inpkomponen.html';
+        }
+        function deletedata(d) {
+            if (confirm('Hapus Data?')) {
+                $.ajax({
+                    type: "DELETE",
+                    url: "https://apimo.hrindo.id/api.php/records/component/"+d,
+                    success: function (response) {
+                        getdata()
+                    }
+                });
+            }
+        }
+        function getdata() {
+            $.ajax({
+                type: "GET",
+                url: "https://apimo.hrindo.id/api.php/records/component",
+                success: function (response) {
+                    console.log(response)
+                    $('tbody').html('');
+                    for (let i = 0; i < response.records.length; i++) {
+                        const e = response.records[i];
+                        jsdetail[e.id] = JSON.parse(e.attribute);
+                        $('tbody#datakomponen').append(''+
+                            '<tr>'+
+                            '    <td>'+e.nama+'</td>'+
+                            '    <td>'+e.type+'</td>'+
+                            '    <td>'+
+                            '        <div class="btn-group" role="group">'+
+                            '            <button type="button" class="btn btn-sm btn-secondary" onclick="detaildata('+e.id+')">'+
+                            '                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>'+
+                            '            </button>'+
+                            '            <button type="button" class="btn btn-sm btn-warning" onclick="editdata('+e.id+')">'+
+                            '                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>'+
+                            '            </button>'+
+                            '            <button type="button" class="btn btn-sm btn-danger" onclick="deletedata('+e.id+')">'+
+                            '                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>'+
+                            '            </button>'+
+                            '        </div>'+
+                            '    </td>'+
+                            '</tr>'+
+                        '');
+                    }
+                }
+            });
+        }
+        $(document).ready(function () {
+            getdata();
+            $('#main-nav').hcOffcanvasNav({
+                // disableAt: 1024,
+                customToggle: $('.toggle-nav-here'),
+                navTitle: 'PC STORE',
+                levelTitles: true,
+                levelTitleAsBack: true
+            });
+        });
+    </script>
+</body>
+</html>
