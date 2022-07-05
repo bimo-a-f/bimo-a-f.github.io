@@ -189,7 +189,8 @@
         function getdata() {
             $.ajax({
                 type: "GET",
-                url: "https://apimo.hrindo.id/api.php/records/component",
+                url: "https://apimo.hrindo.id/api-auth.php/records/component",
+                headers: {"X-API-Key":"4xYkfTWzS7QhA"},
                 success: function (response) {
                     console.log(response)
                     $('tbody').html('');
