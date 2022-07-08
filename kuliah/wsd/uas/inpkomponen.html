@@ -191,7 +191,7 @@
             if (activeid) {
                 $.ajax({
                     type: "PUT",
-                    url: "https://apimo.hrindo.id/api.php/records/component/"+activeid,
+                    url: "https://apimo.hrindo.id/api-auth.php/records/component/"+activeid,
                     data: data,
                     success: function (response) {
                         window.location = 'komponen.html'
@@ -200,7 +200,7 @@
             } else {
                 $.ajax({
                     type: "POST",
-                    url: "https://apimo.hrindo.id/api.php/records/component",
+                    url: "https://apimo.hrindo.id/api-auth.php/records/component",
                     data: data,
                     success: function (response) {
                         window.location = 'komponen.html'
@@ -214,7 +214,7 @@
             if (activeid) {
                 $.ajax({
                     type: "GET",
-                    url: "https://apimo.hrindo.id/api.php/records/component/"+activeid,
+                    url: "https://apimo.hrindo.id/api-auth.php/records/component/"+activeid,
                     success: function (response) {
                         var nama = response.nama;
                         var type = response.type;
