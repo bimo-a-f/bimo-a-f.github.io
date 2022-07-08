@@ -213,7 +213,7 @@
             if (activeid) {
                 $.ajax({
                     type: "PUT",
-                    url: "https://apimo.hrindo.id/api.php/records/rakitan/"+activeid,
+                    url: "https://apimo.hrindo.id/api-auth.php/records/rakitan/"+activeid,
                     data: d,
                     success: function (response) {
                         window.location = 'rakitan.html'
@@ -222,7 +222,7 @@
             } else {
                 $.ajax({
                     type: "POST",
-                    url: "https://apimo.hrindo.id/api.php/records/rakitan",
+                    url: "https://apimo.hrindo.id/api-auth.php/records/rakitan",
                     data: d,
                     success: function (response) {
                         window.location = 'rakitan.html'
@@ -247,18 +247,18 @@
 
             $.ajax({
                 type: "GET",
-                url: "https://apimo.hrindo.id/api.php/records/component",
+                url: "https://apimo.hrindo.id/api-auth.php/records/component",
                 success: function (response) {
                     alcom=response.records
                 }
             });
 
-            var uriGC = "https://apimo.hrindo.id/api.php/records/component?filter=type,eq,";
+            var uriGC = "https://apimo.hrindo.id/api-auth.php/records/component?filter=type,eq,";
 
             if (activeid) {
                 $.ajax({
                     type: "GET",
-                    url: "https://apimo.hrindo.id/api.php/records/rakitan/"+activeid,
+                    url: "https://apimo.hrindo.id/api-auth.php/records/rakitan/"+activeid,
                     success: function (response) {
                         var nama = response.name;
                         var harga = response.harga;
