@@ -182,7 +182,7 @@
             if (confirm('Hapus Data?')) {
                 $.ajax({
                     type: "DELETE",
-                    url: "https://apimo.hrindo.id/api.php/records/rakitan/"+d,
+                    url: "https://apimo.hrindo.id/api-auth.php/records/rakitan/"+d,
                     success: function (response) {
                         getdata()
                     }
@@ -193,7 +193,7 @@
         function getdata() {
             $.ajax({
                 type: "GET",
-                url: "https://apimo.hrindo.id/api.php/records/rakitan",
+                url: "https://apimo.hrindo.id/api-auth.php/records/rakitan",
                 success: function (response) {
                     console.log(response)
                     $('tbody').html('');
